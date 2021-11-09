@@ -35,9 +35,7 @@
 ## Build tool auxiliary files:
 *.fdb_latexmk
 *.synctex
-*.synctex(busy)
 *.synctex.gz
-*.synctex.gz(busy)
 *.pdfsync
 
 ## Build tool directories for auxiliary files
@@ -274,3 +272,7 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# 项目临时文件
+_*
+temp.bib
