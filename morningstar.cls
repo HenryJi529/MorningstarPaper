@@ -1,16 +1,15 @@
 % Author: Henry Ji
 % Email: jeep.jipu@gmail.com
 
-% NOTE: 需要pygments依赖(渲染工具)
 
 \ProvidesClass{morningstar}[2023/07/25 Morningstar class]
 \NeedsTeXFormat{LaTeX2e}
 
 
 %% 处理包继承关系
-\RequirePackage{kvoptions}  %提供键值可选项
-\RequirePackage{etoolbox}  %提供前端工具
-\RequirePackage{calc}  %提供一些参数的符号设置
+\RequirePackage{kvoptions}  % 提供键值可选项
+\RequirePackage{etoolbox}  % 提供前端工具
+\RequirePackage{calc}  % 提供一些参数的符号设置
 
 \SetupKeyvalOptions{family=MORNINGSTAR, prefix=MORNINGSTAR@, setkeys=\kvsetkeys}
 \newcommand{\ekv}[1]{\kvsetkeys{MORNINGSTAR}{#1}}
@@ -117,7 +116,7 @@
 \fancyhead[OL]{\@author : \@title}
 \fancypagestyle{firstpage}{
   \fancyhead[L]{\includegraphics[width=4cm]{./asset/img/计算机学报.png}}
-  \renewcommand{\headrulewidth}{0.4pt} % 可选，如果想画一条页眉下方的横线
+  \renewcommand{\headrulewidth}{0.4pt}  % 可选，如果想画一条页眉下方的横线
 }
 
 
@@ -142,8 +141,7 @@
   {\begingroup\setlength{\parskip}{#1}\ignorespaces}
   {\endgroup}
 % 特定
-\newcommand\halflinespace{\vspace{0.5em}} % 半行
-
+\newcommand\halflinespace{\vspace{0.5em}}  % 半行
 
 
 %% 字体
@@ -173,7 +171,7 @@
 %% ================================================================
 
 %% 封面
-\newcommand\showcover{%
+\newcommand\showcover{
   \cleardoublepage
   \thispagestyle{empty}
   \begin{flushright}
@@ -323,9 +321,9 @@
 
 %% 参考文献
 \RequirePackage{gbt7714}
-\citestyle{numbers}  %使用正文模式
+\citestyle{numbers}  % 使用正文模式
 \bibliographystyle{gbt7714-numerical}
-\renewcommand\refname{\textbf{参考文献}} % 修改参考文献标题的字体大小
+\renewcommand\refname{\textbf{参考文献}}  % 修改参考文献标题的字体大小
 \newcommand{\addbib}[1]{
   \begin{parskiping}{1em}
     \begin{spacing}{1}
@@ -371,7 +369,7 @@
 \RequirePackage{braket}  % 内积括号
 
 % \renewcommand{\theequation}{\arabic{section}-\arabic{equation}}
-\renewcommand{\theequation}{\arabic{equation}} % 编号
+\renewcommand{\theequation}{\arabic{equation}}  % 编号
 \theoremstyle{plain}
 \newtheorem{theorem}{定理}[section]
 \newtheorem{lemma}[theorem]{引理}
@@ -394,7 +392,7 @@
 
 
 %% 代码
-\RequirePackage{minted}  % NOTE: 需要Pygments环境
+\RequirePackage{minted}  % NOTE: 需要pygments依赖(渲染工具)
 
 
 %% 算法
@@ -402,7 +400,7 @@
 
 
 %% 浮动体
-\RequirePackage{float} % 其它环境: float, table
+\RequirePackage{float}  % 其它环境: float, table
 \RequirePackage{caption}  % 浮动标题
 
 
@@ -428,12 +426,12 @@
 
 
 %% 插图
-\RequirePackage{tikz} % latex绘图
+\RequirePackage{tikz}  % latex绘图
 \RequirePackage{pdfpages}  % 插入PDF
 \RequirePackage{graphicx}
 \RequirePackage{subcaption} % 处理子图并排
 
-\renewcommand\thesubfigure{(\alph{subfigure})} % 将子图引用格式修改为(a)
+\renewcommand\thesubfigure{(\alph{subfigure})}  % 将子图引用格式修改为(a)
 \graphicspath{{image/}{figure/}{fig/}{img/}}
 \renewcommand\figurename{图}
 
@@ -452,7 +450,7 @@
 \captionsetup[figure]{skip=3pt}
 
 % 工具
-\newcommand\labeledCaption[1]{ % NOTE: 图表环境中label必须放在caption后面
+\newcommand\labeledCaption[1]{  % NOTE: 图表环境中label必须放在caption后面
   \caption{#1}
   \label{#1}
 }
@@ -465,11 +463,11 @@
 \RequirePackage{verbatim}  % comment环境
 \RequirePackage{bbding} % 特殊符号，例如: \checkmark
 
-\newcommand\versiontext{版本：} % 版本
+\newcommand\versiontext{版本：}  % 版本
 \newcommand\updatetext{日期：}  % 日期
-\newcommand\emailLink[1]{\href{mailto:#1}{\nolinkurl{#1}}} % 邮箱
+\newcommand\emailLink[1]{\href{mailto:#1}{\nolinkurl{#1}}}  % 邮箱
 
 
 %% 中文兼容
-\renewcommand\emph[1]{\textbf{#1}} % 中文的强调
+\renewcommand\emph[1]{\textbf{#1}}  % 中文的强调
 
