@@ -275,11 +275,11 @@
 %% 关键词
 % \newcommand{\keywords}[1]{\vskip2ex\par\noindent\normalfont{\bfseries 关键词: } #1}
 \newcommand{\showcnkeywords}[1]{
-  \noindent \zihao{-5} \textbf{关键词: } #1
+  \noindent \zihao{-5} \textbf{关键词: } #1  \par
   \vspace*{0.8cm}
 }
 \newcommand{\showenkeywords}[1]{
-  \noindent \zihao{-5} \textbf{Keywords: } #1
+  \noindent \zihao{-5} \textbf{Keywords: } #1  \par
   \vspace*{0.8cm}
 }
 
