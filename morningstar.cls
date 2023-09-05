@@ -223,7 +223,7 @@
 \newcommand\showcntitle{
   % \vspace*{1cm}
   % \centerline{\textbf{\zihao{-1}\@title}}
-  \hei{\zihao{3} \@title}
+  \hei{\zihao{3} \@title} \par
   \vspace*{0.3cm}
 }
 \newcommand\showentitle{
@@ -231,7 +231,7 @@
   % \begin{center}
   % \textbf{\zihao{-1}\@entitle}
   % \end{center}
-  \timesnewroman{\textbf{\zihao{4} \@entitle}}
+  \timesnewroman{\textbf{\zihao{4} \@entitle}} \par
   \vspace*{0.3cm}
 }
 
