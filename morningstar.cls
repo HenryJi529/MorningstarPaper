@@ -430,6 +430,7 @@
 \RequirePackage{pdfpages}  % 插入PDF
 \RequirePackage{graphicx}
 \RequirePackage{subcaption} % 处理子图并排
+\RequirePackage{svg} % 支持svg
 
 \renewcommand\thesubfigure{(\alph{subfigure})}  % 将子图引用格式修改为(a)
 \graphicspath{{image/}{figure/}{fig/}{img/}}
