@@ -9,6 +9,12 @@
 
 2. 环境配置: 只需安装[Latex Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), `.vscode`中的配置文件已满足常见需求
 
+
+## 模版运用
+
+- 初次使用: 克隆本仓库，按照已有的文件结构使用
+- 更新模版: 下载新的[morningstar.cls](https://raw.githubusercontent.com/HenryJi529/MorningstarPaper/main/morningstar.cls`)，替换旧的即可
+
 ## 常见语法
 
 1. 框架
