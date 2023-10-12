@@ -368,8 +368,9 @@
 \RequirePackage{amssymb}  % 符号
 \RequirePackage{braket}  % 内积括号
 
-% \renewcommand{\theequation}{\arabic{section}-\arabic{equation}}
-\renewcommand{\theequation}{\arabic{equation}}  % 编号
+% \renewcommand{\theequation}{\arabic{section}.\arabic{equation}} % 编号格式: 1.1, 2.1
+\renewcommand{\theequation}{\arabic{equation}}\counterwithout{equation}{section}% 编号格式: 1, 2, 3
+
 \theoremstyle{plain}
 \newtheorem{theorem}{定理}[section]
 \newtheorem{lemma}[theorem]{引理}
