@@ -433,6 +433,7 @@
 \RequirePackage{subcaption} % 处理子图并排
 \RequirePackage{svg} % 支持svg
 
+\captionsetup[subfigure]{labelformat=simple, labelsep=space} % 设置子图的标号
 \renewcommand\thesubfigure{(\alph{subfigure})}  % 将子图引用格式修改为(a)
 \graphicspath{{image/}{figure/}{fig/}{img/}}
 \renewcommand\figurename{图}
