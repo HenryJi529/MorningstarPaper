@@ -320,8 +320,7 @@
 
 
 %% 参考文献
-\RequirePackage{gbt7714}
-\citestyle{numbers}  % 使用正文模式
+\RequirePackage[sort&compress]{gbt7714}
 \bibliographystyle{gbt7714-numerical}
 \renewcommand\refname{\textbf{参考文献}}  % 修改参考文献标题的字体大小
 \newcommand{\addbib}[1]{
