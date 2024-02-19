@@ -101,6 +101,7 @@
   headheight=35pt,
   headsep=20pt,
 ]{geometry}
+\RequirePackage{stfloats}
 
 
 %% 页眉页脚
