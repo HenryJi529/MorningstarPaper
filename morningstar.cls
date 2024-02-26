@@ -389,7 +389,7 @@
 
 
 %% 化学式
-\RequirePackage{chemformula}
+% \RequirePackage{chemformula}
 
 
 %% 代码
